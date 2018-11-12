@@ -72,6 +72,7 @@ def get(url, params=None, **kwargs):
     """
 
     kwargs.setdefault('allow_redirects', True)
+    print('api.py:75 url: {}'.format(url))
     return request('get', url, params=params, **kwargs)
 
 
